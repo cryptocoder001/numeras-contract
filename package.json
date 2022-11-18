@@ -1,0 +1,33 @@
+{
+  "name": "hardhat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "start": "npx hardhat run scripts/deploy.js",
+    "rinkeby": "npx hardhat run --network rinkeby scripts/deploy.js",
+    "avax": "npx hardhat run --network avalanche scripts/deploy.js",
+    "avax_test": "npx hardhat run --network avalanche_test scripts/deploy.js",
+    "fantom_test": "npx hardhat run --network fantomtestnet scripts/deploy.js",
+    "lint:sol": "solhint -f table contracts/**/*.sol"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.2",
+    "hardhat": "^2.7.1"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.0.1",
+    "@openzeppelin/contracts": "^4.7.0",
+    "dotenv": "^14.2.0"
+  }
+}
